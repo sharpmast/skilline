@@ -1435,6 +1435,9 @@ max-width:600px;
 .testimonials__btn:hover{
   background: #0795c063;
 }
+.testimonials__btn span{
+  flex-grow: 1;
+}
 .testimonials-arrow {
  flex:0 0 80px;
  aspect-ratio: 1;
@@ -1662,9 +1665,13 @@ text-align: center;
   color: #ffffff;
   background: #252641;
 }
-.footer__container {
-  max-width: 600px;
+  .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .footer__head {
   display: grid;
   justify-content: center;
