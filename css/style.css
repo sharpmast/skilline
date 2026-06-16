@@ -1949,7 +1949,6 @@ background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6
     z-index: 1;
   }
   .menu__list {
-    margin-top: 20px;
     flex-direction: column;
     align-items: flex-end;
     color: #0c0b0b;
@@ -1967,7 +1966,7 @@ background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6
   .menu--active {
     top: 0;
     left: 0;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-right: 15px;
   }
   .menu__buttons {
