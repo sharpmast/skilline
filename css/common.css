@@ -1,0 +1,51 @@
+.button {
+  font-size: 22px;
+font-weight: 500;
+box-shadow: 0 20px 24px 0 rgba(0,0,0,.03);
+border-radius: 80px;
+transition: .3s;
+}
+.button:hover {
+  font-size: 22px;
+  background: #00000095;
+  color: #F48C06;
+box-shadow: 0 20px 24px 0 rgba(201, 60, 60, 0.03);
+
+}
+.button--white {
+color: #6C6C6C;
+background: #ffffff;
+}
+.button--orange {
+  color: #ffffff;
+background: #F48C06;
+}
+
+.title{
+  color: #2F327D;
+  font-size: 36px;
+  font-weight: 700;
+}
+.title-orange {
+  color: #F48C06;
+}
+.subtitle {
+  font-size: 24px;
+}
+.label {
+    font-family: 'Nunito Sans';
+  font-size: 20px;
+  color: #525596;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.label p{
+letter-spacing:0.02em;
+text-transform: uppercase;
+}
+.label span{
+flex-basis: 80px;
+height: 2px;
+background: #525596;
+}

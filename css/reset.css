@@ -1,0 +1,83 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+img{
+    vertical-align: top;
+}
+li{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height:1;
+    margin: 0;
+    padding: 0;
+}
+* img{
+    max-width: 100%;
+}
+
+ul,ol{
+    list-style: none;
+}
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+button{
+    cursor: pointer;
+    transition: 0.4s;
+    color: inherit;
+    background: none;
+}
+.ibg {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.ibg img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+[class*="__img"] img{
+   object-fit: cover;
+object-position: center;
+width: 100%;
+min-height: 100%;
+}

@@ -1,0 +1,35 @@
+<svg width="181" height="181" viewBox="0 0 181 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="0" y="0" width="180.209" height="180.209"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_133_91_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_133_91)" data-figma-bg-blur-radius="4">
+<rect x="55.514" y="26.8579" width="85.1083" height="85.1083" rx="20" transform="rotate(9.91602 55.514 26.8579)" fill="white"/>
+</g>
+<g filter="url(#filter1_d_133_91)">
+<rect x="64.9808" y="40.3364" width="61.8155" height="61.8155" rx="20" transform="rotate(9.91602 64.9808 40.3364)" fill="white"/>
+</g>
+<g clip-path="url(#clip1_133_91)">
+<path d="M85.4929 76.3308C85.1414 78.3415 86.4768 80.2544 88.4747 80.6036C90.4732 80.953 92.3778 79.6066 92.7293 77.5959C93.0808 75.5852 91.746 73.6724 89.7475 73.3231C87.7495 72.9738 85.8444 74.3201 85.4929 76.3308ZM98.1566 78.5447C97.8051 80.5553 99.1405 82.4682 101.138 82.8175C103.137 83.1668 105.042 81.8204 105.393 79.8097C105.745 77.799 104.41 75.8863 102.411 75.5369C100.413 75.1876 98.5081 76.534 98.1566 78.5447ZM75.8109 78.3898C77.8094 78.7392 79.714 77.3927 80.0655 75.382C80.417 73.3713 79.0822 71.4586 77.0837 71.1092C75.0857 70.76 73.1806 72.1063 72.8291 74.117C72.4776 76.1277 73.813 78.0405 75.8109 78.3898ZM102.629 84.9539L99.0112 84.3214C97.0132 83.9721 95.1081 85.3184 94.7566 87.3291L94.4384 89.1493C94.2627 90.1543 94.9303 91.111 95.9293 91.2857L103.166 92.5507C104.165 92.7253 105.117 92.0519 105.293 91.0468L105.611 89.2267C105.963 87.216 104.627 85.3031 102.629 84.9539ZM89.9656 82.74L86.3474 82.1075C84.3495 81.7582 82.4443 83.1046 82.0928 85.1153L81.7746 86.9354C81.5989 87.9405 82.2666 88.8972 83.2655 89.0718L90.502 90.3369C91.5009 90.5115 92.4536 89.8381 92.6293 88.833L92.9475 87.0129C93.299 85.0022 91.9636 83.0893 89.9656 82.74ZM77.3018 80.5262L73.6836 79.8937C71.6857 79.5444 69.7805 80.8908 69.429 82.9014L69.1108 84.7216C68.9351 85.7267 69.6028 86.6834 70.6017 86.858L77.8382 88.123C78.8372 88.2977 79.7898 87.6242 79.9655 86.6192L80.2837 84.799C80.6352 82.7883 79.2998 80.8755 77.3018 80.5262ZM78.6746 62.0085L104.002 66.4362L102.729 73.7168C104.125 73.9607 105.29 74.7282 106.099 75.7696L107.764 66.2491C108.036 64.694 107.04 63.2156 105.543 62.954L78.4064 58.2101C76.91 57.9485 75.4715 59.0013 75.1997 60.5563L73.5353 70.0768C74.6502 69.372 76.0071 69.0453 77.4019 69.2891L78.6746 62.0085Z" fill="#545AE8"/>
+</g>
+<defs>
+<filter id="filter0_d_133_91" x="0" y="0" width="180.209" height="180.209" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="14"/>
+<feGaussianBlur stdDeviation="22"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.337255 0 0 0 0 0.356863 0 0 0 0 0.866667 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_133_91"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_133_91" result="shape"/>
+</filter>
+<clipPath id="bgblur_0_133_91_clip_path" transform="translate(0 0)"><rect x="55.514" y="26.8579" width="85.1083" height="85.1083" rx="20" transform="rotate(9.91602 55.514 26.8579)"/>
+</clipPath><filter id="filter1_d_133_91" x="13.4779" y="15.4785" width="153.253" height="153.253" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="16"/>
+<feGaussianBlur stdDeviation="22"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0509804 0 0 0 0 0.0588235 0 0 0 0 0.109804 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_133_91"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_133_91" result="shape"/>
+</filter>
+<clipPath id="clip1_133_91">
+<rect width="36.731" height="29.564" fill="white" transform="translate(73.8837 57.4194) rotate(9.91602)"/>
+</clipPath>
+</defs>
+</svg>
