@@ -37,15 +37,18 @@ navLink.forEach((item) => {
 });
 
 const headerHeight = document.querySelector(".header").offsetHeight;
+
 const options = {
   root: null,
-  rootMargin: `-${headerHeight}px 0px 0px 0px`,
+  // Зсуваємо зону спостереження на висоту хедера
+  rootMargin: `-${headerHeight}px 0px 0px 0px`, 
   threshold: 0,
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting && entry.boundingClientRect.top < headerHeight) {
+    // entry.isIntersecting стає false, як тільки елемент виходить за межі rootMargin (тобто ховається під хедер)
+    if (!entry.isIntersecting) {
       entry.target.classList.add("hidden");
     } else {
       entry.target.classList.remove("hidden");
