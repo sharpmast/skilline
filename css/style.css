@@ -76,7 +76,8 @@ body:has(.wrapper--active) {
   min-height: 100vh;
   top: 0;
   left: 100%;
-  background-image: linear-gradient(90deg, #049bffbd 0%, #ab37f8e2 100%);
+  background: #F0B7A1;
+background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%);
   z-index: 30;
   transition: 0.4s;
 }
