@@ -59,39 +59,6 @@ const observer = new IntersectionObserver((entries) => {
 const menuItems = document.querySelectorAll(".menu__link");
 menuItems.forEach((item) => observer.observe(item));
 
-let documentActions = (e) => {
-  const button = e.target.closest(".btn--action");
-
-  if (button) {
-    document.querySelectorAll(".btn--action").forEach((item) => {
-      item.classList.remove("touch");
-    });
-
-    button.classList.add("touch");
-  }
-};
-
-function ibg() {
-  let ibg = document.querySelectorAll(".ibg");
-  for (let i = 0; i < ibg.length; i++) {
-    if (ibg[i].querySelector("img")) {
-      ibg[i].style.backgroundImage =
-        "url(" + ibg[i].querySelector("img").getAttribute("src") + ")";
-    }
-  }
-}
-
-ibg();
-
-document.addEventListener("click", (e) => {
-  const button = e.target.closest(".popular__btn");
-  if (!button) return;
-
-  document
-    .querySelector(".popular__btn.btn--active")
-    ?.classList.remove("btn--active");
-  button.classList.add("btn--active");
-});
 
 function DynamicAdapt(type) {
   this.type = type;
