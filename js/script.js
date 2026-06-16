@@ -36,29 +36,40 @@ navLink.forEach((item) => {
   });
 });
 
-const headerHeight = document.querySelector(".header").offsetHeight;
 
-const options = {
-  root: null,
-  // Зсуваємо зону спостереження на висоту хедера
-  rootMargin: `-${headerHeight}px 0px 0px 0px`, 
-  threshold: 0,
+let documentActions = (e) => {
+  const button = e.target.closest(".btn--action");
+
+  if (button) {
+    document.querySelectorAll(".btn--action").forEach((item) => {
+      item.classList.remove("touch");
+    });
+
+    button.classList.add("touch");
+  }
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    // entry.isIntersecting стає false, як тільки елемент виходить за межі rootMargin (тобто ховається під хедер)
-    if (!entry.isIntersecting) {
-      entry.target.classList.add("hidden");
-    } else {
-      entry.target.classList.remove("hidden");
+function ibg() {
+  let ibg = document.querySelectorAll(".ibg");
+  for (let i = 0; i < ibg.length; i++) {
+    if (ibg[i].querySelector("img")) {
+      ibg[i].style.backgroundImage =
+        "url(" + ibg[i].querySelector("img").getAttribute("src") + ")";
     }
-  });
-}, options);
+  }
+}
 
-const menuItems = document.querySelectorAll(".menu__link");
-menuItems.forEach((item) => observer.observe(item));
+ibg();
 
+document.addEventListener("click", (e) => {
+  const button = e.target.closest(".popular__btn");
+  if (!button) return;
+
+  document
+    .querySelector(".popular__btn.btn--active")
+    ?.classList.remove("btn--active");
+  button.classList.add("btn--active");
+});
 
 function DynamicAdapt(type) {
   this.type = type;
@@ -248,3 +259,24 @@ const swiper = new Swiper(".testimonials__slider", {
         }
 
 });
+
+const headerHeight = document.querySelector(".header").offsetHeight;
+
+const options = {
+  root: null,
+  rootMargin: `-${headerHeight}px 0px 0px 0px`, 
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      entry.target.classList.add("hidden");
+    } else {
+      entry.target.classList.remove("hidden");
+    }
+  });
+}, options);
+
+const menuItems = document.querySelectorAll(".menu__link");
+menuItems.forEach((item) => observer.observe(item));
