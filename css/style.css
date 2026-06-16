@@ -1979,7 +1979,7 @@ background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6
   .menu--active {
     top: 0;
     left: 0;
-    padding-top: 8rem;
+    padding-top: 10rem;
     padding-right: 15px;
   }
   .menu__buttons {
