@@ -1919,7 +1919,8 @@ flex-direction: column-reverse;
 @media (max-height: 600px), (max-width: 850px) {
   .header {
     position: fixed;
-    background: #f6ebda;
+     background: #F0B7A1;
+background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%);
     padding-block: 20px;
     z-index: 50;
   }
