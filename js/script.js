@@ -260,12 +260,10 @@ const swiper = new Swiper(".testimonials__slider", {
 
 });
 
-const headerHeight = document.querySelector(".header").offsetHeight;
-
 const options = {
   root: null,
-  rootMargin: `-${headerHeight}px 0px 0px 0px`, 
-  threshold: 0,
+  rootMargin: `-60px 0px 0px 0px`, 
+  threshold: 0.2,
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -277,6 +275,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, options);
+
+const menuItems = document.querySelectorAll(".menu__link");
+menuItems.forEach((item) => observer.observe(item));
 
 const menuItems = document.querySelectorAll(".menu__link");
 menuItems.forEach((item) => observer.observe(item));
