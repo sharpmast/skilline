@@ -1855,6 +1855,10 @@ gap: 15px;
 .hero__img{
   max-width: 100%;
 }
+  .software__items{
+  margin-top: 100px;
+  row-gap: 100px;
+}
 .classroom__container {
   display: grid;
   justify-content:center;
