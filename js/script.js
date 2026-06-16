@@ -42,7 +42,7 @@ const options = {
   root: null,
   // Зсуваємо зону спостереження на висоту хедера
   rootMargin: `-${headerHeight}px 0px 0px 0px`, 
-  threshold: 1,
+  threshold: 0,
 };
 
 const observer = new IntersectionObserver((entries) => {
