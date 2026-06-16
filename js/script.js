@@ -37,6 +37,26 @@ navLink.forEach((item) => {
 });
 
 
+const headerHeight = document.querySelector(".header").offsetHeight;
+const options = {
+  root: null,
+  rootMargin: `-${headerHeight}px 0px 0px 0px`,
+  threshold: 0,
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting && entry.boundingClientRect.top < headerHeight) {
+      entry.target.classList.add("hidden");
+    } else {
+      entry.target.classList.remove("hidden");
+    }
+  });
+}, options);
+
+const menuItems = document.querySelectorAll(".menu__link");
+menuItems.forEach((item) => observer.observe(item));
+
 let documentActions = (e) => {
   const button = e.target.closest(".btn--action");
 
@@ -259,25 +279,3 @@ const swiper = new Swiper(".testimonials__slider", {
         }
 
 });
-
-const options = {
-  root: null,
-  rootMargin: `-60px 0px 0px 0px`, 
-  threshold: 0.2,
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      entry.target.classList.add("hidden");
-    } else {
-      entry.target.classList.remove("hidden");
-    }
-  });
-}, options);
-
-const menuItems = document.querySelectorAll(".menu__link");
-menuItems.forEach((item) => observer.observe(item));
-
-const menuItems = document.querySelectorAll(".menu__link");
-menuItems.forEach((item) => observer.observe(item));
